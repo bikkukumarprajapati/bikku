@@ -1,0 +1,146 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+
+}
+
+/* css variable */
+:root {
+    --navbar-height: 60px;
+}
+
+/* navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    /* align-items: center; */
+}
+
+/* navigation bar : logo and image */
+#logo {
+    margin: 1px 3px;
+    height: 81px;
+    width: 88px;
+}
+
+#logo img {
+    height: 56px;
+    margin: 18px 2px;
+    border-radius: 60px;
+}
+
+/* navigation bar : list styling */
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #ababab;
+
+}
+
+#navbar ul li {
+    /* color:white; */
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('background\ img.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1{
+    color: white;  
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* services cnenter */
+#services{
+    margin: 34px;
+    display: flex;
+    border: 2px solid red;
+}
+#services.box{
+border: 2px solid rgb(47, 5, 253);
+}
+#services.box.img{
+    border: 2px solid rgb(47, 5, 253);
+    }
+
+/* utility Classes */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+.center{
+text-align: center;
+}
