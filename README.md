@@ -1,1 +1,1 @@
-[bikku Kumar](https://bikkukumarprajapati.github.io/bikku/)
+[](https://bikkukumarprajapati.github.io/bikku/)
